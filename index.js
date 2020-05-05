@@ -9,4 +9,10 @@ database schema is the structure of our data
 like what columns does it have and how they are related 
 to other tables
 and the constrains and data type of the columns 
+
+
+
+
+migrations is stepwise on how our schema change (tables)
+create a table and drop 
 */

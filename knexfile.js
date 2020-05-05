@@ -2,12 +2,16 @@
 
 module.exports = {
   development: {
+    useNullAsDefault: true,
     client: "sqlite3",
     connection: {
-      filename: "./data.produce.db3"
+      filename: "./data/produce.db3"
     },
-    // this telling sqlite that if we dont provide the value of null
-    // use this as default 
-    useNullAsDefault: true
+    migrations: {
+      directory: "./data/migrations"
+    },
+    seeds : {
+      directory: "./data/seeds"
+    }
   }
 };
